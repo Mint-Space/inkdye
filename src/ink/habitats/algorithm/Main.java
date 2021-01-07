@@ -3,12 +3,12 @@ package ink.habitats.algorithm;
 public class Main {
     private static int acccuracys;
     private static int errors;
-    private static int[] parameter = { 784, 800, 750, 10 };
+    private static int[] parameter = { 784, 800, 760, 10 };
     public static void main(String[] args) {
         double[][] X = MnistRead.getImages(MnistRead.TRAIN_IMAGES_FILE);
         double[] Y = MnistRead.getLabels(MnistRead.TRAIN_LABELS_FILE);
         RunANN runANN = new RunANN(X,Y);
-        runANN.setParameter(parameter,0.15);
+        runANN.setParameter(parameter,0.095);
         int xr = X.length;
         for (int i = 0;i < xr;i++){
             runANN.Run(i);

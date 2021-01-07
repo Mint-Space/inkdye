@@ -83,7 +83,7 @@ public class Backpropagation {
     public double[] E() {
         double[] e = matrix.sub(getAOutput(), output);
         double[] er = matrix.elementProduct(matrix.sub(1, getAOutput()), getAOutput());
-        return E = matrix.division(e,er);
+        return E = matrix.division(e, er);
     }
 
     public double[][] newWeight(int index) {
@@ -91,7 +91,7 @@ public class Backpropagation {
             z = activation.derivationSigmoid(zList.get(index));
             newBias = matrix.elementProduct(z, costFunction());
             newBList.set(index, newBias);
-            a = aList.get(index-1);
+            a = aList.get(index - 1);
             double[][] am = matrix.vectorToColumnMatrix(a);
             double[][] newbm = matrix.vectorToRowMatrix(newBias);
             newWeight = matrix.multi(am, newbm);

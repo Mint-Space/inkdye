@@ -14,14 +14,14 @@ public class ActivationFunction {
     }
 
     public double sigmoid(double z) {
-        return activationValue = 1 / (1 + Math.exp(-1*z));
+        return activationValue = 1 / (1 + Math.exp(-1 * z));
     }
 
     public double[] sigmoid(double[] z) {
         int zr = z.length;
         double[] result = new double[zr];
         for (int i = 0; i < zr; i++) {
-            result[i] = 1 / (1 + Math.exp(-1*z[i]));
+            result[i] = 1 / (1 + Math.exp(-1 * z[i]));
         }
         return activationVector = result;
     }

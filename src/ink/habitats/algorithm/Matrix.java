@@ -10,10 +10,12 @@ public class Matrix {
 
     }
 
+    //构造函数 参数为向量行数
     public Matrix(int row) {
         this.row = row;
     }
 
+    //构造函数
     public Matrix(int row, int column) {
         this.row = row;
         this.column = column;

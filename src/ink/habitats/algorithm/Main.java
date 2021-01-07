@@ -18,7 +18,7 @@ public class Main {
             }else {
                 errors++;
             }
-            System.out.println("第 "+(i+1)+"个，"+out+" Y: "+Y[i]+"  对的： "+acccuracys+" | 错的："+errors +" | 正确率："+acccuracys/((double)i+1));
+            System.out.println("第 "+(i+1)+"个， OUT："+out+" Y: "+Y[i]+"  对的： "+acccuracys+" | 错的："+errors +" | 正确率："+acccuracys/((double)i+1));
         }
     }
 }

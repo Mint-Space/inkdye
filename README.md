@@ -1,6 +1,6 @@
 作者 墨染
 时间 2020年1月7日更新
-网站 https://www.habitats.ink
+网站 https://sake.ink
 
 这个是不需要第三方类库的人工神经网络 用纯JAVA语言写的。
 
